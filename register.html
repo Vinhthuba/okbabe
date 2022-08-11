@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="register.css">
+  <link rel="stylesheet" href="nonstop.css">
+  <link rel="stylesheet" href="/themify-icons-font/themify-icons/themify-icons.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+
+  </script>
+</head>
+<body>
+    <div class="headers">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-xl-8"></div>
+                    <div class="col-md-5 col-xl-4 text-center menu-navbar">
+                        <a href="Support.html">Support</a>
+                        <a href="ContactUs.html">Contact Us</a>
+                        <span class="sub-navbar">
+                            <a href="#" style="font-weight: bold;">English</a>
+                            <span>|</span>
+                            <a href="#">VietNam</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--nav-->
+        <div class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1 col-md-1">
+                        <div class="header-logo">
+                            <a href="index.html">
+                                <img src="image/logo.png" alt="BANANA">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-4">
+                        <div class="nav-menu">
+                            <ul class="nav-text">
+                                <li><a href="Otd.html">OTD</a></li>
+                                <li><a href="Men.html">men</a></li>
+                                <li><a href="Women.html">women</a></li>
+                                <li><a href="Kids.html">kids</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                            <div class="input-group input-group-1">
+                                <input type="text" class="form-control" placeholder="Search by Keyword">
+                                <div class="input-group-prepend btn-search-nav">
+                                    <a href="" class="input-group-text"><i class="ti ti-search"></i></a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="nav-icon">
+                                <a href="Account.html"><i class="ti ti-user"></i></a>
+                                <a href="Favourite.html"><i class="ti ti-heart"></i></a>
+                                <a href="Cart.html"><i class="ti ti-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------->
+    <div class="container-fluid">
+  
+      <div class="breacrumb-section">
+        <div class="container">
+           <div class="row">
+               <div class="col-lg-12">
+                   <div class="breadcrumb-text">
+                       <a href="#">UNIQLO</a>
+                       <span>/</span>
+                       <span>TAO TAI KHOAN</span>
+                   </div>
+               </div>
+           </div>
+        </div>
+     </div>
+    <!------------------------------------->
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="title">
+                    <h2 class="title-1">DANG NHAP</h2>
+                    <p>Đăng nhập bằng địa chỉ email và mật khẩu của bạn.</p>
+                    <p style="color:red;">Vui lòng không sử dụng lại mật khẩu đã được sử dụng cho dịch vụ khách hoặc mật khẩu dễ đoán.</p>
+              </div>
+              <form action="/login.html" class="needs-validation" novalidate>
+                  <div class="form-group">
+                    <label for="uname">Username:</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  </div>
+                  <div class="form-group form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Check this checkbox to continue.</div>
+                    </label>
+                  </div>
+                  <input type="submit" class="btn btn-primary" value="DANG NHAP">
+                </form>
+                
+                <script>
+                // Disable form submissions if there are invalid fields
+                (function() {
+                  'use strict';
+                  window.addEventListener('load', function() {
+                    // Get the forms we want to add validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                      form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+                </script>
+            </div>
+            <div class="col-sm-6">
+                 <div class="title">
+                       <h2 class="title-1">TAO MOT TAI KHOAN</h2>
+                       <p>Hãy tạo tài khoản ngay ! Bạn có thể nhận được các dịch vụ đặc biệt cho riêng bạn như kiểm tra lịch sử mua hàng và nhận phiếu giảm giá cho thành viên. Đăng ký miễn phí ngay hôm nay!</p>
+                       <input type="submit" value="Create an Account" class="btn btn-primary"></div>
+                 </div>
+            </div>
+
+      </div>
+    </div>
+    <!-------------------------------->
+    <div class="footers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="ft-content">
+                        <div class="ft-heading">
+                            <div class="ft-text">About Banana</div>
+                        </div>
+                        <a href="" class="ft-link">Information</a>
+                        <a href="" class="ft-link">Store locator</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <div class="ft-content">
+                        <div class="ft-heading">
+                            <div class="ft-text">Help</div>
+                        </div>
+                        <a href="" class="ft-link">FAQ</a>
+                        <a href="" class="ft-link">Return Policy</a>
+                        <a href="" class="ft-link">Privacy Policy</a>
+                        <a href="" class="ft-link">Accessibility</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <div class="ft-content">
+                        <div class="ft-heading">
+                            <div class="ft-text">Account</div>
+                        </div>
+                        <a href="" class="ft-link">Membership</a>
+                        <a href="" class="ft-link">Profile</a>
+                        <a href="" class="ft-link">Coupons</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="ft-content">
+                        <div class="ft-heading">
+                            <div class="ft-text">E-Newsletter</div>
+                        </div>
+                        <a href="" class="ft-link">Sign up and be the first-in-the know about new arrivals, promotions, in-store evets and more.</a>
+                        <div class="subscribe-now">
+                            <a href="">SUBSCRIBE NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="ft-content">
+                        <div class="ft-heading">
+                            <div class="ft-text">BANANA Social Account</div>
+                        </div>
+                        <div class="ft-list">
+                            <ul class="ft-share">
+                                <li class="item">
+                                    <a href=""><i class="ti ti-facebook"></i></a>
+                                </li>
+                                <li class="item">
+                                    <a href=""><i class="ti ti-instagram"></i></a>
+                                </li>
+                                <li class="item">
+                                    <a href=""><i class="ti ti-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-body"></div>
+    <div class="footer-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <p class="footer-end-license">COPYRIGHT © BANANA CO., LTD. ALL RIGHTS RESERVED.</p>
+                    <div class="footer-end-infomation">
+                        <p>Company Name: BANANA VIETNAM CO., LTD</p>
+                        <p>Enterprise Code: 0315304731, The first registration dated 02/10/2018, The third registration for change dated 23/09/2019</p>
+                        <p>Headquarters address: 26th Floor, Viettel Tower, No. 285, Cach Mang Thang Tam Street, Ward 12, District 10, Ho Chi Minh City, Vietnam</p>
+                        <p>For any inquiry, please visit our FAQ page</p>
+                        <p>Working Hours: 8:00 – 18:00 (Monday – Sunday)</p>
+                        <a href="http://online.gov.vn/Home/WebDetails/74620"><img src="image/footer/tb.png" alt="" class="pt-2"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer-end-right">
+                        <a href="#">Terms of use</a>
+                        <a href="#" class="pl-4">Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
